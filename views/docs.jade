@@ -1,0 +1,84 @@
+extends layout
+
+block content
+    h2 #{title}
+    p.
+        A free restful API with continuously growing anime quotes
+
+    section
+      h4.bold Get a random quote
+      div
+        pre.code-block.string
+          p.code-line.
+          |  fetch('http://localhost:3000/quote')
+          |      .then(res => res.json())
+          |      .then(data => console.log(data))
+          #{func}
+      p.tab output
+      div
+        pre#code.code-block.string #{output}
+
+    section
+      h4.bold Get a random quote by anime character
+      div
+        pre.code-block.string
+          p.code-line.
+          |  fetch('http://localhost:3000/quote?character=Eren Jaeger')
+          |      .then(res => res.json())
+          |      .then(data => console.log(data))
+          #{func}
+      p.tab output
+      div
+        pre#code.code-block.string #{output}
+
+    section
+      h4.bold Get a random quote by anime name
+      div
+        pre.code-block.string
+          p.code-line.
+          |  fetch('http://localhost:3000/quote?anime_name=Attack on Titan')
+          |      .then(res => res.json())
+          |      .then(data => console.log(data))
+          #{func}
+      p.tab output
+      div
+        pre#code.code-block.string #{output}
+
+    section
+      h4.bold Get a list of quotes up to 50
+      div
+        pre.code-block.string
+          p.code-line.
+          |  fetch('http://localhost:3000/quote?size=25')
+          |      .then(res => res.json())
+          |      .then(data => console.log(data))
+          #{func}
+      p.tab output
+      div
+        pre#code.code-block.string #{output}
+
+    section
+      h4.bold COMING SOON : Get a list of quotes up to 50 by anime name
+      div
+        pre.code-block.string
+          p.code-line.
+          |  fetch('http://localhost:3000/quote?size=25&anime_name=Attack on Titan')
+          |      .then(res => res.json())
+          |      .then(data => console.log(data))
+          #{func}
+      p.tab output
+      div
+        pre#code.code-block.string #{output}
+
+    section
+      h4.bold COMING SOON : Get a list of quotes up to 50 by anime character
+      div
+        pre.code-block.string
+          p.code-line.
+          |  fetch('http://localhost:3000/quote?size=25&character=Eren Jaeger')
+          |      .then(res => res.json())
+          |      .then(data => console.log(data))
+          #{func}
+      p.tab output
+      div
+        pre#code.code-block.string #{output}

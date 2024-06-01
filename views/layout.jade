@@ -1,0 +1,15 @@
+doctype html5
+html
+  head
+    title #{title}
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css")
+    style 
+        include ../css/styles.css
+    style(type='text/css')
+  body
+    div.container(style="max-width: 800px;")
+      block content
+      footer(style="text-align:center;")
+        p Created 😁 by  
+          a(href="http://keefcurry.github.io/") Tyree Richardson 
+          span © 2024

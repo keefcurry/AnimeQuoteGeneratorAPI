@@ -1,0 +1,24 @@
+{
+  "name": "animequotegeneratorapi",
+  "version": "1.0.0",
+  "description": "Generates Random Anime Quotes that are stored in a database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keefcurry/AnimeQuoteGeneratorAPI.git"
+  },
+  "author": "Tyree R.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keefcurry/AnimeQuoteGeneratorAPI/issues"
+  },
+  "homepage": "https://github.com/keefcurry/AnimeQuoteGeneratorAPI#readme",
+  "dependencies": {
+    "express": "^4.19.1",
+    "jade": "^1.11.0",
+    "mongodb": "^6.5.0"
+  }
+}

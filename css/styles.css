@@ -1,0 +1,32 @@
+/* Code Block */
+.code-block {
+    background-color: #282c34;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.code-line {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tab { margin-left: 20px; }
+.function { color: rgba(59, 130, 246, .5); }
+.brace { color: rgb(255, 228, 22) }
+.punctuation { color: #8dc891; }
+.string { color: #8dc891; }
+.plain { color: #ffffff; }
+.bold { font-weight: bold; }
+
+/* Button */
+.button {
+    background-color: #8dc891;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    border-color: none;
+    padding: 10px;
+    margin-right: 20px;
+}
